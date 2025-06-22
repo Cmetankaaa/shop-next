@@ -1,0 +1,94 @@
+.shop {
+  background-color: black;
+  padding: 30px 0 100px 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1400px;
+  padding: 0 20px 0 20px;
+}
+
+.header {
+  color:white;
+  font-size: 96px;
+  background-color: rgba(119, 119, 119, 1);
+  width: 100%;
+  padding: 0px 100px 15px 100px;
+  border-radius: 20px; 
+  text-align: center;
+}
+
+.reviewsSection {
+  padding: 30px;
+}
+
+.sectionTitle {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #f0f2f5;
+}
+
+.reviewsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 25px;
+}
+
+.noReviews {
+  text-align: center;
+  color: #758788;
+  font-size: 1.2rem;
+  padding: 30px;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.cartSection {
+  padding: 30px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  margin: 20px;
+}
+
+.productsSection {
+  max-width: 990px;
+  margin: 0 auto;
+}
+
+.productsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.noProducts {
+  text-align: center;
+  color: #6c757d;
+  font-size: 1.2rem;
+  padding: 30px;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+  .header {
+    font-size: 50px;
+    padding: 0px 55px 10px 55px;
+  }
+}
+
+@media (max-width: 440px) {
+  .header {
+    font-size: 35px;
+    padding: 0px 35px 5px 35px;
+  }
+  .reviewsGrid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+}
